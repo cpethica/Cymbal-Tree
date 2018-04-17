@@ -32,6 +32,8 @@ Wemos D1 mini
 
 ## Software
 
-OTA update
+MIDI_player_switch_control_beta:
+Plays midi file stored on SD in loop. Midi file must be stored in the SD card root directory and named the same as file on line 44.
 
-SD card reader
+OTA update:
+Built in OTA update feature for wireless boards [thanks to jeroenvermeulen](https://github.com/jeroenvermeulen/JeVe_EasyOTA)
