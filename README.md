@@ -16,7 +16,10 @@ Midi controlled, solenoid driven cymbal tree.
 
 ## Interface
 
-Wemos D1 mini with SD card module
+Wemos D1 mini
+
+[SD card module](https://github.com/espressif/arduino-esp32/tree/master/libraries/SD)
+
 [midi output](https://www.arduino.cc/en/Tutorial/Midi)
 
 
