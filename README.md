@@ -28,7 +28,7 @@ Wemos D1 mini
 
 [midi output](https://www.arduino.cc/en/Tutorial/Midi)
 
-
+Changeover switch - switches from Midi from SD card to Midi from other device via socket on box.
 
 ## Software
 
