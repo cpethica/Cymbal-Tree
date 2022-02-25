@@ -1,5 +1,7 @@
 // Play a file from the SD card in looping mode, from the SD card.
 // Example program to demonstrate the use of the MIDFile library
+
+// Include OTA update feature
 //
 // Hardware required:
 //  SD card interface - change SD_SELECT for SPI comms
@@ -13,7 +15,7 @@
 //OTA program
 #define WIFI_SSID        "..."
 #define WIFI_PASSWORD    "..."
-#define ARDUINO_HOSTNAME "..."
+#define ARDUINO_HOSTNAME "midi-player-prototype"
 EasyOTA OTA;
 
 byte byteRead;
@@ -44,9 +46,6 @@ char *loopfile = "katzen.mid";  // simple and short file
 SdFat SD;
 MD_MIDIFile SMF;
 
-Button button1(0); // connect to D3 on WEMOS (has pullup resistor built in)
-int buttonState = 0;
-int buttonPin = 0;
 
 
 void midiCallback(midi_event *pev)
@@ -127,7 +126,6 @@ void setup(void)
 
   DEBUGS("\n[MidiFile Looper]");
 
-  button1.begin();
   OTA.setup(WIFI_SSID, WIFI_PASSWORD, ARDUINO_HOSTNAME);
 
   // Initialize SD
